@@ -273,7 +273,7 @@ async def txt_handler(bot: Client, m: Message):
                         url = re.search(r"(https://.*?playlist.m3u8.*?)\"", text).group(1)
 
             elif 'videos.classplusapp' in url or "tencdn.classplusapp" in url or "webvideos.classplusapp.com" in url or "media-cdn-alisg.classplusapp.com" in url or "videos.classplusapp" in url or "videos.classplusapp.com" in url or "media-cdn-a.classplusapp" in url or "media-cdn.classplusapp" in url:
-             url = f'https://dragoapi.vercel.app/classplus?link={url}&token={raw_text4}'
+             url = f'https://ugxclassplusapi.vercel.app/get/cp/dl?url={raw_text4}'
             
             #elif '/master.mpd' in url:
              #id =  url.split("/")[-2]
